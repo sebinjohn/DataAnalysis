@@ -1,5 +1,5 @@
 
-package com.hdfs.extract.value;
+package extractor.valueextractor;
 
 import java.net.URI;
 

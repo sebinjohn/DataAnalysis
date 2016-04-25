@@ -1,5 +1,5 @@
 
-package com.hdfs.extract.value;
+package extractor.valueextractor;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -35,7 +35,7 @@ public class ValueExtractorMapper extends
 			InterruptedException {
 		/*Path[] cacheFiles = DistributedCache.getLocalCacheFiles(context
 				.getConfiguration());*/
-		 
+
 		URI[] cacheFiles = DistributedCache.getCacheFiles(context
 				.getConfiguration());
 		BufferedReader reader = new BufferedReader(new FileReader(
@@ -76,7 +76,7 @@ public class ValueExtractorMapper extends
 								.equalsIgnoreCase(valueToCheck)) {
 							StringMatches = true;
 						} else {
-							StringMatches = false;							
+							StringMatches = false;
 						}
 					}
 				}
